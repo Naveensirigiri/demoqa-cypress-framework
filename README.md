@@ -54,7 +54,7 @@ cypress/
 │
 ├── e2e/
 │   ├── pages/                # Page Object files (e.g., PracticeFormPage.js, AlertsPage.js)
-│   ├── tests/                # All test specs (e.g., practiceFormTest.cy.js)
+│ 
 │
 ├── fixtures/                 # Static test data (optional)
 ├── support/
