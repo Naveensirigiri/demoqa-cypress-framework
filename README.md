@@ -9,17 +9,22 @@ based on the [https://demoqa.com](https://demoqa.com) test site.
 
 ### 1. Clone the repository
 
-```bash
-git clone https://github.com/your-username/demoqa-cypress-framework.git
-cd cypress_demoqa_automation
+```
+git clone https://github.com/Naveensirigiri/demoqa-cypress-framework.git
+cd demoqa-cypress-framework
 ```
 
 ### 2. Install dependencies
 
 Make sure you have **Node.js >= v14** installed.
 
-```bash
+```
 npm install
+```
+
+Install Cypress
+```
+npm install cypress --save-dev
 ```
 
 ---
@@ -28,7 +33,7 @@ npm install
 
 ### To open Cypress Test Runner (GUI mode)
 
-```bash
+```
 npx cypress open
 ```
 
@@ -36,7 +41,7 @@ Select `E2E Testing > Chrome or Electron` > Choose a spec to run.
 
 ### To run all tests in headless mode (CLI)
 
-```bash
+```
 npx cypress run
 ```
 
@@ -48,8 +53,8 @@ npx cypress run
 cypress/
 │
 ├── e2e/
-│   ├── pages/                # Page Object files (e.g., FormsPage.js, AlertsPage.js)
-│   ├── tests/                # All test specs (e.g., formTest.spec.js)
+│   ├── pages/                # Page Object files (e.g., PracticeFormPage.js, AlertsPage.js)
+│   ├── tests/                # All test specs (e.g., practiceFormTest.cy.js)
 │
 ├── fixtures/                 # Static test data (optional)
 ├── support/
@@ -82,44 +87,15 @@ cypress.config.js             # Cypress project configuration
 
 ## 🧪 Run Specific Test
 
-```bash
-npx cypress run --spec "cypress/e2e/tests/checkboxTest.spec.js"
 ```
-
----
-
-## 💡 CI/CD Integration (Optional)
-
-To run Cypress in CI pipelines (like GitHub Actions, GitLab CI):
-
-```yaml
-# Sample GitHub Action snippet
-- name: Install dependencies
-  run: npm install
-
-- name: Run Cypress tests
-  run: npx cypress run
+npx cypress run --spec "cypress/e2e/checkBoxTest.cy.js"
 ```
-
----
-
-## 🐞 Defect Reporting (Sample Format)
-
-```text
-❌ Defect: Calendar DOB selector picks wrong date
-- Steps: Select '1990-04-05' as DOB in practice form
-- Expected: Day '5' should be selected
-- Actual: Day '4' gets selected
-- Severity: Medium
-```
-
----
 
 ---
 
 ## 📬 Author
 
-- 👤 Naveen Sirigiri – Automation QA | Playwright | Cypress | Selenium  
+- 👤 Naveen Sirigiri – Senoir Automation QA | Playwright | Cypress | Selenium  
 - 📧 sirigirinaveen@gmail.com
 
 ---
