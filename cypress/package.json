@@ -1,0 +1,14 @@
+{
+  "name": "cypress_demoqa_automation",
+  "version": "1.0.0",
+  "description": "E2E demoqa Automation Tests",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^14.3.0"
+  }
+}
